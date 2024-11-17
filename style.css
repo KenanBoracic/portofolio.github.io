@@ -1,0 +1,449 @@
+/* font Raleway */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+ BOJE TEKSTA KROZ CITAVU STRANICU SU:
+#551A8B, #264653 , #000000, #457B9D
+
+BOJE KORISTENE ZA POZADINU SU:
+WHITESMOKE, WHITE, AZURE
+
+
+
+
+*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+
+}
+
+/* HEADER  */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+ 
+}
+
+.slikaNav img{
+    width: 60px;
+    border-radius: 10px;
+
+
+}
+
+.navMeni ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.navMeni ul li{
+    font-size: 15px;
+
+}
+.navMeni ul li a{
+    color: #264653;
+}
+.navMeni ul li a:hover{
+    border-bottom: 3px solid #457b9d;
+    padding: 12px 0px;
+    transition: 0.1s ease;
+    color: #5e8fa5;
+}
+#trenutni{
+    border-bottom: 3px solid #457b9d;
+    padding-bottom: 12px;
+}
+
+/* search polje uradjeno po primjeru s linka 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_searchbar3
+ */
+.search-polje input[type=text]{ 
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+
+
+
+
+
+
+/* vertikalni meni */
+.container{
+    display: flex;
+    gap: 10px;
+
+
+
+}
+aside{
+
+    height: 100vh;
+    width: 20%;
+
+    background-color: #9adee2b0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;   
+    top: 20px;
+   
+
+    box-shadow: rgba(0, 0, 0, 0.15) 3.95px 1.95px 2.6px;
+}
+
+.VertikalniMeni{
+    display: flex;
+
+    
+
+}
+.VertikalniMeni ul {
+    list-style: none;
+
+}
+.VertikalniMeni ul li{
+    margin-top: 70px;
+    font-size: 16px;
+    
+}
+.VertikalniMeni ul a{
+    color: #264653;
+}
+.VertikalniMeni ul li a:hover{
+    border-bottom: 3px solid #457b9d;
+    padding: 12px 0px;
+    transition: 0.1s ease;
+    color: #5e8fa5;
+}
+
+
+
+/* Main dio */
+main{
+    width: 80%;
+    
+   
+    
+}
+
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 85%;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.naslov{
+
+    height: 30%;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+.sadrzaj{
+
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ime{
+    color: #457b9d;
+}
+
+.slikaMain{
+    width: 40%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slikaMain img{
+    width: 40%;
+   
+    
+}
+
+.o-meni{
+    width: 50%;
+   
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.cv{
+    
+    width: auto;
+    text-align: center;
+    margin: 20px auto;;
+
+}
+.cv a{
+    color: #457b9d;
+    font-size: 20px;
+    border: 2px solid #457b9d;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+
+.cv a:hover{
+    background-color: #457b9d;
+    color: white;
+    transition: 0.5s;
+}
+
+
+  /* vjestine  */
+
+  .vjestine{
+   
+    margin-top: 20vh;
+    text-align: center;
+    max-width: 100vw;
+   
+
+  }
+  .vjestine h3{
+    color: #551a8b;
+  }
+
+.vjestine-container{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;    
+
+}
+
+.vjestine-container div{
+    width: 20%; 
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 20px;
+   
+  
+}
+.vjestine-container  img{
+    width: 200px;
+
+}
+.vjestine-container a{
+    color: #551a8b;
+}
+
+
+/* obrazovanje */
+
+.obrazovanje{
+    max-width: 90%;
+    margin: 30px auto;
+    overflow-x:auto;
+    
+}
+.obrazovanje h3{
+    text-align: center;
+    color: #551a8b;
+
+}
+.obrazovanje table{
+    width: 100%;
+    border-collapse: collapse;
+
+
+}
+.naslovi{
+    background-color: whitesmoke;
+    color: #551a8b;
+}
+td,th{
+    border: 1px solid #dddddd;
+    padding: 7px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #9adee2b0;
+    text-align: center;
+    margin-top:100px;
+    padding: 20px;
+    max-width: 100%;
+
+}
+footer .povratak_na_vrh a{
+    font-size: 18px;
+    color:#457b9d;
+}
+.drustvene_mreze a{
+    font-size: 20px;
+    margin: 5px;
+    color: #551a8b;
+}
+.drustvene_mreze a:hover{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* za telefon */
+@media (max-width: 573.98px) {
+    
+
+  
+    .navMeni ul li a {
+        font-size: 12px;
+    }
+    .search-polje input[type=text] {
+        padding: 2px;
+        width: 80%;
+    }
+    .naslov {
+        font-size: 13px;
+        margin: 5px;
+    }
+    aside {
+        display: none;
+    }
+    .slikaMain {
+        display: none;
+    }
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+    .o-meni {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .o-meni p {
+        font-size: 13px;
+        padding: 10px;
+    }
+    .cv {
+        width: 90%;
+    }
+    .cv a {
+        font-size: 17px;
+        padding: 15px;
+    }
+    .naslov {
+        height: 8%;
+        margin-bottom: 20px;
+    }
+  .vjestine-container div{
+    width: 100%;
+  }
+   
+    .vjestine-container img{
+        width: 50%;
+        
+    }
+
+    footer .povratak_na_vrh a{
+        font-size: 13px;
+    }
+
+
+   
+   
+}
+
+/*  za tablete */
+@media  (min-width: 574px) and (max-width: 991.98px){
+   
+    aside {
+        display: none;
+    } 
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+    .MainContainer {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .naslov {
+        height: 18%;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .slikaMain {
+        display: none;
+    }
+    .o-meni {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .vjestine-container div {
+        width: 40%; 
+    }
+}
